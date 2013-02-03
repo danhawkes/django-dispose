@@ -1,8 +1,8 @@
-# django-dispose
+# About
 
 Dispose of media files that are no longer referenced in the database.
 
-## Setup
+# Setup
 
 Install with pip:
 
@@ -32,7 +32,7 @@ Add definitions for apps and directories to search:
         },
     }
 
-## Run
+# Run
 
 List files and prompt for confirmation before deleting:
 
@@ -42,5 +42,6 @@ Alternatively, delete without prompting:
 
     python manage.py dispose --noinput
 
-## License
+# License
+
 MIT - See LICENSE file.
