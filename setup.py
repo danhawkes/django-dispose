@@ -1,12 +1,12 @@
 #!/usr/bin/env python
-from setuptools import setup
+
+from distutils.core import setup
 
 setup(
     name='django-dispose',
-    description='Disposes of media files that are no longer referenced in the \
-    database.',
+    description='Disposes of media files that are no longer referenced in the database.',
     version='1.0',
-    author='danhawkes',
+    author='Daniel Hawkes',
     author_email='dan@danhawkes.co.uk',
     license='MIT',
     url='https://bitbucket.org/danhawkes/django-dispose',
@@ -15,13 +15,13 @@ setup(
         'django_dispose.management',
         'django_dispose.management.commands'],
     classifiers=[
-        'Development Status :: 4 - Production/Stable',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-        'Operating System :: POSIX :: Linux',
+        'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: System :: Installation/Setup'
     ]
