@@ -89,9 +89,11 @@ def get_deletables(rootdir, skip_dirs, needed_files):
 
 def do_delete(delete_files, empty_dirs):
     for f in delete_files:
-        os.remove(f)
+        # only delete if file still exists
+        if os.path.isfile(f):
+            os.remove(f)
     for d in empty_dirs:
-        shutil.rmtree(d, ignore_errors=False)
+        shutil.rmtree(d, ignore_errors=True)
 
 
 class Command(BaseCommand):
