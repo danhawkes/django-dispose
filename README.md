@@ -6,7 +6,7 @@ Dispose of media files that are no longer referenced in the database.
 
 Install with pip:
 
-    pip install git+https://bitbucket.org/danhawkes/django-dispose.git#egg=django-dispose
+    pip install django-dispose
 
 Add to the installed apps in `settings.py`
 
